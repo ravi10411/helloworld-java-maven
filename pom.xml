@@ -1,13 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.scmgalaxy.mavensample</groupId>
-  <artifactId>yoodle</artifactId>
-  <packaging>jar</packaging>
-  <version>5.0.0</version>
+  <groupId>com.drucare.mavensample</groupId>
+  <artifactId>backend</artifactId>
+  <version>1.0.1</version>
   <name>my-maven</name>
   <url>http://maven.apache.org</url>
-	
+
 <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <maven.compiler.source>1.6</maven.compiler.source>
@@ -24,32 +23,32 @@
   </dependencies>
   
   <build>
-	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-javadoc-plugin</artifactId>
-			<executions>
-				<execution>
-					<id>attach-javadocs</id>
-					<goals>
-						<goal>jar</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
-	</plugins>
-	</build>
-  
+        <plugins>
+                <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                                <execution>
+                                        <id>attach-javadocs</id>
+                                        <goals>
+                                                <goal>jar</goal>
+                                        </goals>
+                                </execution>
+                        </executions>
+                </plugin>
+        </plugins>
+        </build>
+         
 <distributionManagement>
     <repository>
-        <id>sym</id>
-        <name>release softx</name>
-        <url>http://13.233.127.211:8081/nexus/content/repositories/broadall/</url>
+        <id>drucare</id>
+        <name>backend-release</name>
+        <url>http://20.204.35.116:8081/repository/backend-release/</url>
     </repository>
     <snapshotRepository>
-        <id>sym</id>
-        <name>snapshot softx</name>
-        <url>http://13.233.127.211:8081/nexus/content/repositories/broadall/</url>
+        <id>drucare</id>
+        <name>backend-snapshot</name>
+        <url>http://20.204.35.116:8081/repository/backend-snapshot/</url>
     </snapshotRepository>
 </distributionManagement>
 
